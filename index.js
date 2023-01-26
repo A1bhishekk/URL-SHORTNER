@@ -11,11 +11,11 @@ connectDB()
 
 app.use(express.json())
 
-app.get('/',(req,res)=>{
+app.get('/home',(req,res)=>{
     res.send('Hello World')
 })
 
-app.use('/url',router)
+app.use('/',router)
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
