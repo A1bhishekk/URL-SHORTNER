@@ -13,7 +13,7 @@ export const generateNewShortID = async (req, res) => {
         visitHistory:[]
     })
 
-    return res.status(201).json({message:"Short Url Genrated Successfully",id:shortID,url:`http://localhost:8001/url/${shortID}`})
+    return res.status(201).json({message:"Short Url Genrated Successfully",id:shortID,url:`https://abhiurl.vercel.app/url/${shortID}`})
 }
 
 export const redirectURL=async(req,res)=>{
